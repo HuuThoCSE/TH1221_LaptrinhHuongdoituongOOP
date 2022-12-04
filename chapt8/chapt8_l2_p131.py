@@ -57,8 +57,8 @@ class Book(Document):
         return self.TenNXB
 
 class Magazine(Document):
-    def __int__(self, TenTaiLieu, TenNguoiChuBien, NXB, SoTrang, LinhVuc, NgonNgu):
-        Document.__init__(self, TenTaiLieu, TenNguoiChuBien, NXB, SoTrang)
+    def __int__(self, TenTaiLieu="", TenNguoiChuBien="", NXB=2022, SoTrang=30, LinhVuc="", NgonNgu=""):
+        Document.__init__(self, TenTaiLieu, TenNguoiChuBien, NXB, SoTrang, LinhVuc)
         self.LinhVuc = LinhVuc
         self.NgonNgu = NgonNgu
 
@@ -70,7 +70,7 @@ class Magazine(Document):
     def Xuat(self):
         print("=====Magazine: ")
         Document.Xuat(self)
-        print("Lĩnh vực:", self.LinhVuc)
+        print(self.LinhVuc)
         print("Ngôn ngữ:", self.NgonNgu)
 
     def ValueLinhVuc(self):
@@ -91,7 +91,7 @@ Book1.Xuat()
 # Book1.Xuat()
 print()
 
-Magazine1 = Magazine("Bao khoa hoc","Nguyen Huu Tho", 2022, 30,"CNTT", "TiengViet")
+Magazine1 = Magazine()
 # Magazine1 = Magazine()
 # Magazine1.Nhap()
 Magazine1.Xuat()
