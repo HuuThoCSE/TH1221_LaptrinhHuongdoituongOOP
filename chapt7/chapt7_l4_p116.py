@@ -118,7 +118,7 @@ for item in cb:
     if cb[item] == max:
         print("-", item)
 
-# Xắp xếp danh sách tăng dần dựa vào số trang
+# Sắp xếp danh sách tăng dần dựa vào số trang
 import operator
 ListSach.sort(key=operator.attrgetter('SoTrang'))
 print("\n=====DANH SÁCH TĂNG DẦN THEO SỐ TRANG:")
