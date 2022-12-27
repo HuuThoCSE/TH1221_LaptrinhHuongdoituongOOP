@@ -54,7 +54,6 @@ def max(n):
             mx =  i
     print("Tu xuat nhien nhat la: ", mx, " so lan la: ", m)
 
-
 ###
 n = input("Nhap vao chuoi bat ky: ")
 print("Co ", dem(n), " ki tu chu")
