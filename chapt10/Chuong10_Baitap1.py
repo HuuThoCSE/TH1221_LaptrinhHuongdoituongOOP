@@ -1,0 +1,5 @@
+namefile = input("Nhập vào tên file: ")
+f = open(namefile, 'r', encoding='utf-8')
+nd = f.read()
+print(nd)
+f.close()

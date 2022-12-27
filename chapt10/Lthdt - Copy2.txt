@@ -1,0 +1,3 @@
+Học phần: LẬP TRÌNH HĐT
+Số tín chỉ: 3
+Thực hành trên NNLT: Python
